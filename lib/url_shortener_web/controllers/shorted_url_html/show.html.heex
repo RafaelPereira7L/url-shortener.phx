@@ -1,0 +1,21 @@
+<.header>
+  This is your shorted URL.
+</.header>
+
+<.list>
+  <:item title="Shorted URL">
+    <a href={@base_url <> "/s/" <> @shorted_url.shorted_url} target="_blank" class="text-brand font-bold">
+      <%= @base_url <> "/s/" <> @shorted_url.shorted_url %>
+    </a>
+  </:item>
+  <:item title="Original URL">
+    <a href={@shorted_url.original_url} target="_blank" class="text-blue-600 font-bold">
+      <%= @shorted_url.original_url %>
+    </a>
+  </:item>
+  <:item title="Number of visits"><%= @shorted_url.number_of_visits %></:item>
+</.list>
+
+<.back navigate={~p"/"}>
+  Create another shorted URL
+</.back>

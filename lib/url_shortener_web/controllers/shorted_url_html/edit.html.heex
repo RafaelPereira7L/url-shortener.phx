@@ -1,0 +1,8 @@
+<.header>
+  Edit Shorted url <%= @shorted_url.id %>
+  <:subtitle>Use this form to manage shorted_url records in your database.</:subtitle>
+</.header>
+
+<.shorted_url_form changeset={@changeset} action={~p"/#{@shorted_url}"} />
+
+<.back navigate={~p"/"}>Back to shorted_urls</.back>
