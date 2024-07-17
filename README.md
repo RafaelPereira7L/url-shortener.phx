@@ -1,4 +1,12 @@
-# UrlShortener
+# url-shortener.phx
+
+A URL shortener application made using Elixir and Phoenix Framework
+
+# Examples:
+  <img src="assets/examples/homepage.png" />
+  <img src="assets/examples/created.png" />
+  <img src="assets/examples/stats.png" />
+
 
 To start your Phoenix server:
 
